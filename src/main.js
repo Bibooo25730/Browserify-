@@ -15,6 +15,10 @@
 //  幸运的是有个插件可以帮助我们完成这项任务 ： npm install --save -dev tinyify
 //  browserify ./src/main.js > ./dist/bundle.js --plugin tinyify
 //  const a = 'hello A'; consolo.log(a) ==>  consolo.log('hello A')； 将常量的值转为直接在控制台日志函数中使用，所以我们使用的内存更少，这意味着性能更高的代码，这对于移动浏览器非常有用。
+//  一个包含数千行代码的大型 js 文件，我们通过 未声明的变量来故意创建一个错误，提示 变量 错误来自第 1296 行，这意味着我们需要滚动整个页面以到达修复。好消息是有一些神奇的解决方案可以帮助解决它，它被称为 源映射，基本上是捆绑之前代码的编码表示，这意味着 一旦浏览器找到一个错误，它将 读取源映射并使用它告诉开发人员来自哪个模块的哪一行中的错误
+//  browserify ./src/main.js > ./dist/bundle.js -d 不要在代码的发行版中生成源代码映射，因为它显然会给bundle文件增加太多的大小 
+//  直到这里我们注意到输入那么长的命令有点烦人，尽管我们可以回车选择命令，但也有很少使用的命令经常忘记。
+//  一个非常简单的解决方案是创建一个自定义命令，该命令可以很短，并且有一个有意义的名称 ==》 package.json
 const anime = require('animejs')
 anime({
     targets:'body',
