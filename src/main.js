@@ -14,7 +14,7 @@
 //  这样做很容易，当有数千行代码需要琢个查看时，这几乎是一项不可能完成的任务。
 //  幸运的是有个插件可以帮助我们完成这项任务 ： npm install --save -dev tinyify
 //  browserify ./src/main.js > ./dist/bundle.js --plugin tinyify
-//  const a = 'hello A'; consolo.log(a) ==>  consolo.log('hello A')； 将常量的值转为直接在控制台日志函数中使用，所以我们使用的内存更少，这意味着性能更高的代码，这对于移动浏览器非常有用
+//  const a = 'hello A'; consolo.log(a) ==>  consolo.log('hello A')； 将常量的值转为直接在控制台日志函数中使用，所以我们使用的内存更少，这意味着性能更高的代码，这对于移动浏览器非常有用.
 const anime = require('animejs')
 anime({
     targets:'body',
