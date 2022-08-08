@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browserify ./src/main.js > ./dist/bundle.js -d"
+    "start": "browserify ./src/main.js > ./dist/bundle.js -d",
+    "build":"browserify ./src/main.js > ./dist/bundle.js -t babelify --plugin tinyify" 
   },
   "keywords": [],
   "author": "",
