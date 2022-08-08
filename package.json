@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "tinyify": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -18,4 +19,3 @@
     "babelify": "^10.0.0"
   }
 }
-
