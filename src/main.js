@@ -23,7 +23,10 @@
 //  browserify ./src/main.js -x animejs > ./dist/bundle.js 使用 -x 标志和依赖性的路径 或 名称 告诉浏览器文件包使用它的依赖，但是我们不希望它保存在气泡文件中
 //  browserify -r animejs > ./dist/anime.js  -r 标志 表示浏览器知道这是一个依赖项的方式创建，并且需要被主模块使用。不要忘了主模块添加
 
- 
+//  通过前面我们知道可以在 npm 写更短的指令，来处理我们的操作 在大部分时间中 我们常常都是 npm run start 就是生产模式中，就是自动化。我们可以让每次更改代码时自动运行 ，我们需要安装一个 watch Fi 的插件
+//  npm install watchify -g
+//  watchify ./src/main.js -o ./dist/bundle.js -d  开启监听
+ //  watchify ./src/main.js -o ./dist/bundle.js -d -v 更新保存显示一些信息，捆绑包的大小和再次创建它花费的时间
 const anime = require('animejs')
 anime({
     targets:'body',
@@ -32,3 +35,4 @@ anime({
 })
 
 
+console.log('helloa')
