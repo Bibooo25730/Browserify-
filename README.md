@@ -8,3 +8,6 @@ init
 1. init
 2. requier （commit 注释打错了）
 3. import
+4. tinyify
+5. denpends
+6. end
